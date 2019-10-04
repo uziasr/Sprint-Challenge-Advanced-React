@@ -19,7 +19,7 @@ function PlayerGrid(props){
     
     return (props.data.map((person,ind)=>{
         return(
-            <div className='card'>
+            <div className='card' key={ind}>
             <h3>{person.name}</h3>
             <p>{person.country}</p>
             <p>Searches: {person.searches}</p>
